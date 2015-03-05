@@ -12,6 +12,9 @@ ruleset a16x66 {
     select when echo hello
     send_directive("say") with
       something = "Hello Again!! ";
+    always {
+      log "This is my log message"
+    }
   }
   
   rule echo is active {
