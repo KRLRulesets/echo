@@ -11,7 +11,7 @@ ruleset a16x66 {
   rule hello_world is active {
     select when echo hello
     send_directive("say") with
-      something = ["Hello", "Again!!"].join(" ");
+      something = "Hello World";
     always {
       log "This is my log message"
     }
